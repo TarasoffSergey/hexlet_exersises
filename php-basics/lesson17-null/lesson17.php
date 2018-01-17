@@ -21,6 +21,8 @@ function compact (array $array) {
 	// BEGIN (write your solution here)
 
 	;
+    ;
+    ;
     
     // END
 	}
