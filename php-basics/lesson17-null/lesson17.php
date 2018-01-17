@@ -15,14 +15,21 @@
  * Например в исходном массиве значение 0 находится под индексом 6 и в результирующем так же.
  * 
  */
-
-function compact (array $array) {
-
-	// BEGIN (write your solution here)
-
-	;
-    ;
-    ;
-    
+function compactMy(array $array)
+{
+    // BEGIN (write your solution here)
+    if (!is_array($array)){
+		return;
+		}
+	$result = [];
+	foreach ($array as  $key => $element) {		
+		if (!is_null($element)) {
+			$result[$key] = $element;
+			}
+		}
+	
+	return $result;
+	
     // END
-	}
+}
+
