@@ -25,7 +25,10 @@
  */
 
 function bestAttempt($firstClubAttempts, $secondClubAttempts){
-	$result = array_map(null, $firstClubAttempts, $secondClubAttempts);
+	$firstClubAttemptsTemp = array_values($firstClubAttempts);
+	print_r($firstClubAttemptsTemp);
+	$secondClubAttemptsTemp = array_values($secondClubAttempts);
+	$result = array_map(null, $firstClubAttemptsTemp, $secondClubAttemptsTemp);
 	print_r($result);
 	
 }
